@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>503 Service Temporarily Unavailable</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #1a365d;
+        }
+
+        .maintenance-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            /* 修改为蓝色渐变背景 */
+            background: url('images/waves.5e02e0d8.svg') no-repeat center center fixed,
+                      linear-gradient(180deg, #1a365d 0%, #2d5a9e 100%);
+            background-size: cover, auto;
+            background-blend-mode: overlay;
+            position: relative;
+            color: white;
+        }
+
+        /* 移除遮罩效果，使用渐变背景代替 */
+        .maintenance-container::before {
+            display: none;
+        }
+
+        .maintenance-text {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            background: rgba(26, 54, 93, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .maintenance-text h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .maintenance-text p {
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        footer p {
+            color: white;
+            font-size: 0.875rem;
+            background: rgba(26, 54, 93, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <main class="maintenance-container">
+        <div>
+            <div class="maintenance-text">
+                <h1>System Maintenance</h1>
+                <p>We are currently performing scheduled maintenance to improve our services.</p>
+                <p>Our website will be back online shortly. We apologize for any inconvenience caused.</p>
+                <p>Thank you for your patience and understanding.</p>
+            </div>
+        </div>
+        
+        <footer style="position: fixed; bottom: 20px; text-align: center;">
+            <p style="font-size: 0.875rem;">2025 PolicyPal Pte. Ltd. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+</html> 
